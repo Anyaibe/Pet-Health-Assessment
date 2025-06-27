@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assessment History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/history.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>📜 Pet Health Assessment History</h2>
+
+        {% if records %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Pet Type</th>
+                    <th>Age</th>
+                    <th>Symptoms</th>
+                    <th>Diagnosis</th>
+                    <th>Severity</th>
+                    <th>Emergency</th>
+                    <th>Date/Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in records %}
+                <tr>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>{{ row[4] }}</td>
+                    <td>{{ row[5] }}</td>
+                    <td>{% if row[6] %}⚠️ Yes{% else %}✅ No{% endif %}</td>
+                    <td>{{ row[7] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <p class="no-records">No assessments recorded yet.</p>
+        {% endif %}
+
+        <div class="buttons">
+            <a href="/" class="btn">← Back to Assessment</a>
+        </div>
+    </div>
+</body>
+</html>

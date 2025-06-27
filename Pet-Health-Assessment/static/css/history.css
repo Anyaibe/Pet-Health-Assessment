@@ -1,0 +1,78 @@
+body {
+    background-color: #fce4ec;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 40px 15px;
+}
+
+.container {
+    max-width: 1000px;
+    background: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    color: #ad1457;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+thead {
+    background-color: #f8bbd0;
+    color: #4a004f;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fce4ec;
+}
+
+tbody tr:hover {
+    background-color: #f9e2ec;
+}
+
+.no-records {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+    padding: 20px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn {
+    background-color: #ad1457;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #880e4f;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
