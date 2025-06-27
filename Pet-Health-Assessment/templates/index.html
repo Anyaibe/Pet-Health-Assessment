@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,5 +38,29 @@
           <a href="/history" class="btn-secondary">📜 View Previous Assessments</a>
         </div>
     </div>
+=======
+<!doctype html>
+<html>
+<head>
+    <title>Pet Health Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Pet Health Checker</h1>
+    <form method="POST" action="/assess">
+        <label>Select Pet Type:</label>
+        <select name="pet_type">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+        </select><br><br>
+
+        <label>Select Symptoms:</label><br>
+        {% for symptom in symptoms %}
+            <input type="checkbox" name="symptoms" value="{{ symptom }}"> {{ symptom }}<br>
+        {% endfor %}
+
+        <br><button type="submit">Assess Health</button>
+    </form>
+>>>>>>> af79d483e0e83e3265f201d2e751ac3a6573c855
 </body>
 </html>
