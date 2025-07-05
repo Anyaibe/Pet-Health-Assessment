@@ -131,10 +131,6 @@ rabbit,loss of appetite,GIT stasis,high,1
 
 ---
 
-## 📜 License
-
-This project is for educational and demonstration purposes.
-Licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
 
@@ -148,7 +144,7 @@ If you want to improve the condition logic, add new pets, or enhance UI/UX, feel
 ## 📬 Contact
 
 Made with ❤️ by \[Your Name]
-Email: [youremail@example.com](mailto:youremail@example.com)
+Email: chimeremezeanyaibe73@gmail.com
 
 ```
 
