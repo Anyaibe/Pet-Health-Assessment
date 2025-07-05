@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assessment Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h2>🐾 Pet Health Assessment Result</h2>
+
+        <div class="result-card">
+            <p><strong>Selected Symptoms:</strong> {{ results[0][0] }}</p>
+            <p><strong>Predicted Condition:</strong> <span class="condition">{{ results[0][1] }}</span></p>
+            <p><strong>Severity Score:</strong> <span class="score">{{ score }}</span></p>
+
+            {% if emergency %}
+                <div class="emergency-alert">
+                    ⚠️ Emergency detected! Please visit a vet immediately.
+                </div>
+            {% else %}
+                <div class="safe-message">
+                    ✅ No emergency symptoms detected. Monitor your pet and follow up as needed.
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="buttons">
+            <a href="/" class="btn">← Check Another Pet</a>
+            <a href="/history" class="btn btn-secondary">📜 View Assessment History</a>
+        </div>
+    </div>
+</body>
+</html>
