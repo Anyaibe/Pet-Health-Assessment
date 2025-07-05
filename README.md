@@ -143,7 +143,7 @@ If you want to improve the condition logic, add new pets, or enhance UI/UX, feel
 
 ## 📬 Contact
 
-Made with ❤️ by \[Your Name]
+Made with ❤️ by Anyaibe Chimeremeze Canaan VUG/SEN/22/7954
 Email: chimeremezeanyaibe73@gmail.com
 
 ```
