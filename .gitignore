@@ -17,10 +17,10 @@ dist/
 .vscode/
 
 # SQLite database (optional: include if you don’t want to push saved records)
-*.db
+
 
 # Model pickle file (optional: include if it’s large or can be regenerated)
-*.pkl
+
 
 # OS files
 .DS_Store
